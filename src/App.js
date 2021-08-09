@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import styled from 'styled-components';
+
+const DayContainer = styled.h1`
+  height: 800px;
+  width: 400px;
+  background-color: lightblue;
+`;
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>
+          Daily Planner
+        </h1>
       </header>
+      <section>
+        <h2>Day</h2>
+        <DayContainer>
+
+        </DayContainer>
+      </section>
     </div>
   );
 }
